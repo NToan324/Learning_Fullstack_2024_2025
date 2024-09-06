@@ -1,0 +1,43 @@
+<svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
+
+ <title/>
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <rect stroke-width="NaN" stroke-linejoin="round" stroke="#000000" fill="none" id="svg_1" y="58" x="2" width="60" height="4" class="cls-1"/>
+  <rect stroke-width="NaN" stroke-linejoin="round" stroke="#000000" fill="none" id="svg_2" y="38" x="16" width="32" height="4" class="cls-1"/>
+  <line stroke-width="NaN" stroke-linejoin="round" stroke="#000000" fill="none" id="svg_3" y2="58" y1="42" x2="18" x1="18" class="cls-1"/>
+  <line stroke-width="NaN" stroke-linejoin="round" stroke="#000000" fill="none" id="svg_4" y2="58" y1="42" x2="22" x1="22" class="cls-1"/>
+  <line stroke-width="NaN" stroke-linejoin="round" stroke="#000000" fill="none" id="svg_5" y2="58" y1="42" x2="42" x1="42" class="cls-1"/>
+  <line stroke-width="NaN" stroke-linejoin="round" stroke="#000000" fill="none" id="svg_6" y2="58" y1="42" x2="46" x1="46" class="cls-1"/>
+  <polyline stroke-width="NaN" stroke-linejoin="round" stroke="#000000" fill="none" id="svg_7" points="48 40 60 40 60 58" class="cls-1"/>
+  <polyline stroke-width="NaN" stroke-linejoin="round" stroke="#000000" fill="none" id="svg_8" points="16 40 4 40 4 58" class="cls-1"/>
+  <polyline stroke-width="NaN" stroke-linejoin="round" stroke="#000000" fill="none" id="svg_9" points="28 58 28 48 36 48 36 58" class="cls-1"/>
+  <rect stroke-width="NaN" stroke-linejoin="round" stroke="#000000" fill="none" id="svg_10" y="46" x="8" width="6" height="8" class="cls-1"/>
+  <rect stroke-width="NaN" stroke-linejoin="round" stroke="#000000" fill="none" id="svg_11" y="46" x="50" width="6" height="8" class="cls-1"/>
+  <polyline stroke-width="NaN" stroke-linejoin="round" stroke="#000000" fill="none" id="svg_12" points="6 40 6 18 58 18 58 40" class="cls-1"/>
+  <rect stroke-width="NaN" stroke-linejoin="round" stroke="#000000" fill="none" id="svg_13" y="22" x="10" width="4" height="4" class="cls-1"/>
+  <rect stroke-width="NaN" stroke-linejoin="round" stroke="#000000" fill="none" id="svg_14" y="22" x="18" width="4" height="4" class="cls-1"/>
+  <rect stroke-width="NaN" stroke-linejoin="round" stroke="#000000" fill="none" id="svg_15" y="30" x="10" width="4" height="4" class="cls-1"/>
+  <rect stroke-width="NaN" stroke-linejoin="round" stroke="#000000" fill="none" id="svg_16" y="30" x="18" width="4" height="4" class="cls-1"/>
+  <rect stroke-width="NaN" stroke-linejoin="round" stroke="#000000" fill="none" id="svg_17" y="70" x="154" width="4" transform="rotate(180 156,72.00000000000001) " height="4" class="cls-1"/>
+  <rect stroke-width="NaN" stroke-linejoin="round" stroke="#000000" fill="none" id="svg_18" y="70" x="130" width="4" transform="rotate(180 132,72.00000000000001) " height="4" class="cls-1"/>
+  <rect stroke-width="2px" stroke-linejoin="round" stroke="#000000" fill="none" id="svg_19" y="94" x="154" width="4" transform="rotate(180 156,96.00000000000001) " height="4" class="cls-1"/>
+  <rect stroke-width="2px" stroke-linejoin="round" stroke="#000000" fill="none" id="svg_20" y="94" x="130" width="4" transform="rotate(180 132,96.00000000000001) " height="4" class="cls-1"/>
+  <polyline stroke-width="NaN" stroke-linejoin="round" stroke="#000000" fill="none" id="svg_21" points="26 38 26 26 38 26 38 38" class="cls-1"/>
+  <rect stroke-width="NaN" stroke-linejoin="round" stroke="#000000" fill="none" id="svg_22" y="2" x="18" width="28" height="16" class="cls-1"/>
+  <line stroke-width="3" stroke-linejoin="round" stroke="#000000" fill="none" id="svg_23" y2="15" y1="5" x2="32" x1="32" class="cls-1"/>
+  <line stroke-width="3" stroke-linejoin="round" stroke="#000000" fill="none" id="svg_24" y2="10" y1="10" x2="37" x1="27" class="cls-1"/>
+  <rect stroke-width="NaN" stroke-linejoin="round" stroke="#000000" fill="none" id="svg_25" y="8" x="46" width="12" height="4" class="cls-1"/>
+  <line stroke-width="NaN" stroke-linejoin="round" stroke="#000000" fill="none" id="svg_26" y2="18" y1="12" x2="56" x1="56" class="cls-1"/>
+  <rect stroke-width="NaN" stroke-linejoin="round" stroke="#000000" fill="none" id="svg_27" y="7.636364" x="5.272728" width="12" transform="rotate(180 11.272727966308594,9.636363983154297) " height="4" class="cls-1"/>
+  <line stroke-width="NaN" stroke-linejoin="round" stroke="#000000" fill="none" id="svg_28" y2="18" y1="12" x2="8" x1="8" class="cls-1"/>
+  <rect stroke-width="NaN" stroke-linejoin="round" stroke="#000000" fill="none" id="svg_29" y="22.121212" x="43.212122" width="4" height="4" class="cls-1"/>
+  <rect stroke-width="NaN" stroke-linejoin="round" stroke="#000000" fill="none" id="svg_30" y="22" x="50.60606" width="4" height="4" class="cls-1"/>
+  <rect stroke-width="NaN" stroke-linejoin="round" stroke="#000000" fill="none" id="svg_31" y="30.484848" x="43.333334" width="4" height="4" class="cls-1"/>
+  <rect stroke-width="NaN" stroke-linejoin="round" stroke="#000000" fill="none" id="svg_32" y="30.242424" x="50.848484" width="4" height="4" class="cls-1"/>
+ </g>
+</svg>

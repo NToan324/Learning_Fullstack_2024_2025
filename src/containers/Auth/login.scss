@@ -1,0 +1,139 @@
+body {
+    .login-container {
+        background-color: #6d50df;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        overflow: hidden;
+        .login-frame {
+            background-image: linear-gradient(to right, #6a86db, #6d50df);
+            display: flex;
+            justify-content: space-between;
+            border-radius: 20px;
+            box-shadow: 0 0 15px 0 rgba($color: #646262, $alpha: 0.3);
+            width: 700px;
+            height: 500px;
+
+            .login-info {
+                border-radius: 20px;
+                padding: 15px 25px;
+                color: #fff;
+                width: 350px;
+
+                .name-service {
+                    display: flex;
+                    flex-direction: column;
+
+                    .name-slogan {
+                        margin-top: -25px;
+                    }
+
+                    .name-child {
+                        display: flex;
+                        gap: 5px;
+                        align-items: center;
+
+                        p:first-child {
+                            font-size: 3.5rem;
+                            font-weight: bold;
+                        }
+                    }
+                }
+
+                .info-service {
+                    margin-top: 20px;
+
+                    h2 {
+                        font-size: 1.8rem;
+                        font-weight: bolder;
+                        line-height: 30px;
+                    }
+
+                    .svg {
+                        width: 50px;
+                        height: 30px;
+                        object-fit: cover;
+                    }
+
+                    img {
+                        width: 250px;
+                        height: 250px;
+                        object-fit: contain;
+                    }
+                }
+            }
+
+            .login-form {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border-radius: 20px;
+                padding: 15px 25px;
+                background-color: #fff;
+                width: calc(100% - 300px);
+
+                h1 {
+                    font-weight: bold;
+                }
+
+                form {
+                    button[type='button'] {
+                        margin-top: 15px;
+                        height: 40px;
+                        width: 100%;
+                        border-radius: 20px;
+                        padding: 6px;
+                        border: none;
+                        color: #fff;
+                        font-weight: bold;
+                        background-image: linear-gradient(to right, #6a86db, #6d50df);
+                    }
+
+                    .form-group {
+                        position: relative;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+
+                        input {
+                            width: 250px;
+                            border: 1px solid #838383;
+                            border-radius: 20px;
+                            padding: 8px 10px;
+
+                            &:focus {
+                                border-color: #6a86db;
+                                box-shadow: 0 0 5px 0 #95a4d1;
+                                outline: none;
+                            }
+                        }
+
+                        .icon {
+                            position: absolute;
+                            right: 10px;
+                            bottom: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 739px) {
+        .login-container {
+            .login-frame {
+                justify-content: center;
+
+                .login-form {
+                    min-width: 340px;
+                }
+
+                .login-info {
+                    display: none;
+                }
+            }
+        }
+    }
+}

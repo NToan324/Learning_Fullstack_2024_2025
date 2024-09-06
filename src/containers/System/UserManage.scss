@@ -1,0 +1,104 @@
+body {
+    overflow-y: scroll;
+
+    .users-container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .list-users-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: bold;
+            width: 70%;
+            margin: 20px;
+
+            button {
+                border-radius: 15px;
+                padding: 10px;
+                border: none;
+                background-color: rgb(90, 226, 133);
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                gap: 7px;
+                cursor: pointer;
+            }
+        }
+
+        table {
+            margin: 10px 0;
+            width: 70%;
+
+            tr,
+            td,
+            th {
+                border: 1px solid;
+                border-collapse: collapse;
+                text-align: center;
+                padding: 10px;
+            }
+
+            tr:nth-child(odd) {
+                background-color: #f3f3f3;
+            }
+
+            th {
+                background-color: rgb(90, 226, 133);
+            }
+
+            .action {
+                button {
+                    border: none;
+                    background-color: transparent;
+                }
+            }
+
+        }
+
+    }
+
+    .btn {
+        padding: 0 10px;
+
+        &:first-child {
+            background-color: rgb(90, 226, 133);
+        }
+    }
+
+    .modal {
+        .modal-dialog {
+            .modal-content {
+                .modal-header {
+                    color: #fff;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    background-color: rgb(90, 226, 133);
+
+                    .close {
+                        color: #fff;
+                        background-color: transparent;
+                        border: none;
+                        font-size: 1.8rem;
+                    }
+                }
+
+                .modal-body {
+                    .form-group-create-users {
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        gap: 15px;
+
+                        input {
+                            margin-top: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,57 @@
+{
+    "homeHeader": {
+        "medical-specialty": "Medical specialty",
+        "search-doctor": "Find a doctor by specialty",
+        "health-facility": "Health facility",
+        "select-room": "Choose hospital clinic",
+        "doctor": "Doctor",
+        "select-good-doctor": "Select a good doctor",
+        "medical-package": "Medical package",
+        "general-health": "General health",
+        "support": "Support",
+        "welcome": "Welcome"
+    },
+    "banner": {
+        "medical-foundation": "MEDICAL FOUNDATION",
+        "comphrehensive-health-care": "COMPREHENSIVE HEALTH CARE",
+        "specialist-examination": "Specialist examination",
+        "remote-medical-examination": "Remote medical examination",
+        "general-health": "General health",
+        "medical-tests": "Medical tests",
+        "mental-health": "Mental health",
+        "dental-examination": "Dental examination"
+    },
+    "login": {
+        "login": "Login",
+        "username": "Username",
+        "password": "Password",
+        "userpass-wrong": "Invalid username or password!"
+    },
+    "menu": {
+        "system": {
+            "header": "System",
+            "system-administrator": {
+                "header": "System Administrator",
+                "user-manage": "User manage",
+                "user-redux": "Manage user using redux",
+                "register-package-group-or-account": "Register service package for group/account"
+            },
+            "system-parameter": {
+                "header": "System-parameter"
+            }
+        },
+        "admin": {
+            "manage-user": "Manage user",
+            "manage-doctor": "Manage doctor",
+            "manage-admin": "Manage admin",
+            "crud": "CRUD user",
+            "crud-redux": "CRUD Redux",
+            "clinic": "Clinic",
+            "manage-clinic": "Manage clinic",
+            "specialty": "Specialty",
+            "manage-specialty": "Manage specialty",
+            "handbook": "Handbook",
+            "manage-handbook": "Manage handbook"
+        }
+    }
+}

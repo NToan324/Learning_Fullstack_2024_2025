@@ -1,0 +1,57 @@
+{
+    "homeHeader": {
+        "medical-specialty": "Chuyên khoa",
+        "search-doctor": "Tìm bác sĩ chuyên khoa",
+        "health-facility": "Cơ sở y tế",
+        "select-room": "Chọn bệnh viện phòng khám",
+        "doctor": "Bác sĩ",
+        "select-good-doctor": "Chọn bác sĩ giỏi",
+        "medical-package": "Gói khám bệnh",
+        "general-health": "Khám sức khỏe tống quát",
+        "support": "Hỗ trợ",
+        "welcome": "Xin chào"
+    },
+    "banner": {
+        "medical-foundation": "NỀN TẢNG Y TẾ",
+        "comphrehensive-health-care": "CHĂM SÓC SỨC KHỎE TOÀN DIỆN",
+        "specialist-examination": "Khám chuyên khoa",
+        "remote-medical-examination": "Khám từ xa",
+        "general-health": "Khám tổng quát",
+        "medical-tests": "Xét nghiệm y học",
+        "mental-health": "Sức khỏe tinh thần",
+        "dental-examination": "Khám nha khoa"
+    },
+    "login": {
+        "login": "Đăng nhập",
+        "username": "Tên đăng nhập",
+        "password": "Mật khẩu",
+        "userpass-wrong": "Sai tên đăng nhập hoặc mật khẩu!"
+    },
+    "menu": {
+        "system": {
+            "header": "Hệ thống",
+            "system-administrator": {
+                "header": "Quản trị hệ thống",
+                "user-manage": "Quản lý người sử dụng",
+                "user-redux": "Quản lý user redux",
+                "register-package-group-or-account": "Đăng ký gói dịch vụ cho nhóm/tài khoản"
+            },
+            "system-parameter": {
+                "header": "Tham số hệ thống"
+            }
+        },
+        "admin": {
+            "manage-user": "Quản lý người dùng",
+            "manage-doctor": "Quản lý bác sĩ",
+            "manage-admin": "Quản lý admin",
+            "crud": "CRUD người dùng",
+            "crud-redux": "CRUD Redux",
+            "clinic": "Phòng khám",
+            "manage-clinic": "Quản lý phòng khám",
+            "specialty": "Chuyên khoa",
+            "manage-specialty": "Quản lý chuyên khoa",
+            "handbook": "Cẩm nang",
+            "manage-handbook": "Quản lý cẩm nang"
+        }
+    }
+}

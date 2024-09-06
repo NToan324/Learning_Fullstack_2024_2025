@@ -1,0 +1,351 @@
+.home-header-container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    padding: 50px 20px;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 10000;
+    background-color: #fff;
+    h5 {
+        font-weight: bold;
+    }
+
+    .header-content-left {
+        padding-left: 20px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        width: 25%;
+        gap: 20px;
+
+        .header-menu {
+            font-size: 2.5rem;
+        }
+
+        .header-logo {
+            background: url(../../assets/bookingcare-2020.svg) center center no-repeat;
+            width: 200px;
+            height: 43px;
+            object-fit: cover;
+        }
+    }
+
+    .header-content-center {
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .content-child {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: start;
+        }
+
+    }
+
+    .header-content-right {
+        width: 25%;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        padding-right: 20px;
+        gap: 10px;
+
+        .support {
+            display: flex;
+            gap: 5px;
+            justify-content: center;
+            align-items: center;
+            margin-right: 15px;
+            cursor: pointer;
+        }
+
+        .language {
+            display: flex;
+            gap: 10px;
+
+            .language-vi {
+                cursor: pointer;
+                opacity: 0.3;
+
+                &.active,
+                &:hover {
+                    color: #ffc10e;
+                    opacity: 1;
+                }
+            }
+
+            .language-en {
+                cursor: pointer;
+                opacity: 0.3;
+
+                &.active,
+                &:hover {
+                    opacity: 1;
+                    color: #49bce2;
+
+                }
+            }
+        }
+    }
+}
+
+.home-header-container + .content {
+    padding-top: 100px;
+}
+.home-header-banner {
+    margin-top: 100px;
+    .header-blur-banner {
+        width: 110%;
+        height: 240px;
+        position: absolute;
+        filter: blur(7px);
+        background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 1));
+        bottom: -9px;
+    }
+
+    position: relative;
+    background: url(../../assets/bookingcare-cover-4.1.jpg) center center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 670px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding-top: 50px;
+
+    .header-banner-title {
+        text-align: center;
+        font-size: 2.4rem;
+        color: #fff;
+        text-shadow: 0 0 5px rgba($color: #000000, $alpha: 1.0);
+    }
+
+    .header-search {
+        background: #ffc10e;
+        border-radius: 20px;
+        width: 450px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .icon-search {
+            font-size: 1.9rem;
+            padding-left: 20px;
+        }
+
+        input {
+            background: transparent;
+            border: none;
+            outline: none;
+            width: 100%;
+            padding: 20px;
+            font-size: 1.2rem;
+        }
+    }
+
+    .header-function {
+        margin-top: 150px;
+        display: flex;
+        justify-content: space-around;
+        align-items: start;
+        gap: 130px;
+        z-index: 10;
+
+        .function-child {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+            width: 130px;
+
+            p {
+                text-align: center;
+                font-weight: bold;
+                font-size: 1.4rem;
+
+                &:hover {
+                    color: #49bce2;
+                    cursor: pointer;
+                }
+            }
+
+            .function-child-icon {
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+                background-color: #fff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                box-shadow: 0 0 7px 0 rgb(147, 147, 147);
+                color: #49bce2;
+                font-size: 2.6rem;
+            }
+        }
+    }
+}
+
+.specialty-container,
+.outStandingDoctor-container,
+.about-container {
+    background-color: #f5f5f5;
+}
+
+.specialty-container,
+.medicalFacility-container,
+.outStandingDoctor-container,
+.handBook-container {
+    padding: 15px 10px 10px 10px;
+    height: 430px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    .specialty-title,
+    .medicalFacility-title,
+    .outStandingDoctor-title,
+    .handBook-title {
+        padding: 0 127px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        button {
+            background-color: #ffc10e;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            padding: 10px 20px;
+
+            &:hover {
+                background-color: #ff8c00;
+            }
+        }
+    }
+
+    .slick-slider {
+        height: 340px;
+        padding: 0 120px;
+
+        .slick-prev,
+        .slick-next {
+            position: absolute;
+            z-index: 100;
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+        }
+
+        .slick-next {
+            right: 120px;
+
+        }
+
+        .slick-prev {
+            left: 120px;
+
+        }
+
+        .slick-prev:before,
+        .slick-next:before {
+            font-size: 3.4rem;
+
+        }
+
+        .specialty-image,
+        .medicalFacility-image,
+        .outStandingDoctor-image,
+        .handBook-image {
+            padding: 10px 7px;
+            height: 320px;
+            text-align: center;
+
+            p {
+                margin-top: 15px;
+                font-size: 1.2rem;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        //Oustanding Doctor
+        .outStandingDoctor-image {
+            display: flex !important;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 170px;
+                height: 170px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+
+            .outStandingDoctor-inform {
+                line-height: 15px;
+            }
+
+            p {
+                font-size: 1.4rem;
+                font-weight: bold;
+            }
+
+            .outStandingDoctor-inform-child {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+
+                .outStandingDoctor-inform-child-icon {
+                    font-size: 1.6rem;
+                }
+
+                .outStandingDoctor-inform-child-text {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+
+    }
+
+}
+
+.about-container {
+    height: 400px;
+    padding: 15px 127px;
+    margin-top: 20px;
+
+    .about-title {
+        margin-bottom: 15px;
+    }
+
+    .about-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        gap: 30px;
+
+    }
+}
+
+.homeFooter-container {
+    text-align: center;
+    padding-top: 20px;
+}

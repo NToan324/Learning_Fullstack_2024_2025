@@ -1,0 +1,156 @@
+import React, { Component } from 'react';
+// import { FormattedMessage } from 'react-intl';
+import { connect } from 'react-redux';
+import './UserManage.scss'
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import userService from '../../services/userService';
+import UserManage from './UserManage';
+class ModalManagement extends Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            userInfo: {
+                email: '',
+                password: '',
+                firstName: '',
+                lastName: '',
+                address: '',
+            },
+            errMess: '',
+        }
+    }
+
+    async componentDidMount() {
+    }
+
+    toggle = () => {
+        this.props.handleModalToggle();
+    }
+
+    handleInput = (e) => {
+        let copyState = { ...this.state.userInfo };
+        let { name, value } = e.target;
+        copyState[name] = value;
+        this.setState({
+            userInfo: copyState
+        })
+    }
+
+    validateEmail = (email) => {
+        return /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
+    };
+
+    showErrorMessage = (item, value) => {
+        let itemInput = document.getElementById(item);
+        this.setState({
+            errMess: `Value ${item} is not valid`,
+        }, () => {
+            itemInput.focus();
+            value.innerHTML = this.state.errMess;
+            value.style.display = 'block';
+        })
+    }
+
+    handleValidParams = (data) => {
+        let flags = true;
+        for (let item of Object.keys(data)) {
+            let value = document.getElementById(`errMess-${item}`);
+            value.style.display = 'none';
+            if (data[item] === '') {
+                this.showErrorMessage(item, value);
+                flags = false;
+                break;
+            }
+            if (item === 'email' && !this.validateEmail(data.email)) {
+                this.showErrorMessage(item, value);
+                flags = false;
+                break;
+            }
+        }
+        return flags
+    }
+
+    handleCreateUser = async () => {
+        let data = this.state.userInfo;
+        let flags = this.handleValidParams(data);
+        if (flags) {
+            this.props.handleCreateUser(data);
+            this.props.handleModalToggle();
+            this.setState({
+                userInfo: {
+                    email: '',
+                    password: '',
+                    firstName: '',
+                    lastName: '',
+                    address: '',
+                },
+            })
+        }
+    }
+
+    render() {
+        return (
+            <div>
+                <Modal
+                    isOpen={this.props.isModal}
+                    toggle={() => this.toggle()}
+                    size='lg'
+                    {...this.args}
+                    centered>
+                    <ModalHeader toggle={() => this.toggle()}>Create User</ModalHeader>
+                    <ModalBody>
+                        <div className='form-group-create-users'>
+                            <div className='group-email'>
+                                <label htmlFor='email'>Email</label>
+                                <input type='email' id='email' placeholder='' name='email' value={this.state.email} className='form-control' onChange={(e) => this.handleInput(e)}></input>
+                                <p id='errMess-email' style={{ color: 'red', display: 'none', marginTop: '5px' }}></p>
+                            </div>
+                            <div className='psw-group'>
+                                <label htmlFor='password'>Password</label>
+                                <input type='password' id='password' placeholder='' name='password' value={this.state.password} className='form-control' onChange={(e) => this.handleInput(e)}></input>
+                                <p id='errMess-password' style={{ color: 'red', display: 'none', marginTop: '5px' }}></p>
+                            </div>
+                            <div className='firstName-group'>
+                                <label htmlFor='firstName'>First Name</label>
+                                <input type='text' id='firstName' placeholder='' name='firstName' value={this.state.firstName} className='form-control' onChange={(e) => this.handleInput(e)}></input>
+                                <p id='errMess-firstName' style={{ color: 'red', display: 'none', marginTop: '5px' }}></p>
+                            </div>
+                            <div className='lastName-group'>
+                                <label htmlFor='lastName'>Last Name</label>
+                                <input type='text' id='lastName' placeholder='' name='lastName' value={this.state.lastName} className='form-control' onChange={(e) => this.handleInput(e)}></input>
+                                <p id='errMess-lastName' style={{ color: 'red', display: 'none', marginTop: '5px' }}></p>
+                            </div>
+                            <div className='address-group'>
+                                <label htmlFor='address'>address</label>
+                                <input type='text' id='address' placeholder='' name='address' value={this.state.address} className='form-control' onChange={(e) => this.handleInput(e)}></input>
+                                <p id='errMess-address' style={{ color: 'red', display: 'none', marginTop: '5px' }}></p>
+                            </div>
+                        </div>
+                    </ModalBody>
+                    <ModalFooter>
+                        <Button color="primary" onClick={() => this.handleCreateUser()}>
+                            Create
+                        </Button>{' '}
+                        <Button color="secondary" onClick={() => this.toggle()}>
+                            Cancel
+                        </Button>
+                    </ModalFooter>
+                </Modal>
+            </div>
+        )
+    }
+
+}
+
+const mapStateToProps = state => {
+    return {
+    };
+};
+
+const mapDispatchToProps = dispatch => {
+    return {
+    };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(ModalManagement);
